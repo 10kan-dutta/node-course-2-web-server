@@ -64,6 +64,12 @@ hbs.registerHelper('screamIt',(text)=>{
  	});
  });
 
+ app.get('/project',(req,res)=>{
+ 	res.render('project.hbs',{
+ 		pageTitle:'Projects'
+ 	});
+ });
+
   app.get('/bad',(req,res)=>{
  	res.send({
  		errorMessage:'Unable to handle request'
